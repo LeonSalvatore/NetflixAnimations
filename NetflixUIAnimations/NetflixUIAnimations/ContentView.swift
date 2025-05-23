@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+   @StateObject private var observer: MainObserver = .init()
+  
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        ZStack {
+           
+            MainView()
+            
+            HiddenView()
+                        
+            ProfileView(observing: observer)
+            
+            if !observer.doneLoading { SplashScreen() }
         }
-        .padding()
+        .environmentObject(observer)
+        .preferredColorScheme(.dark)
+    }
+    
+    @ViewBuilder
+    private func HiddenView() -> some View {
+        if observer.hideMainView {
+            Rectangle()
+                .fill(.black)
+                .ignoresSafeArea()
+        }
     }
 }
 

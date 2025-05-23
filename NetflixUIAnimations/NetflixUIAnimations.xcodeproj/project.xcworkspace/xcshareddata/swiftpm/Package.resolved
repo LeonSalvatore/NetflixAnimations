@@ -1,0 +1,24 @@
+{
+  "originHash" : "e3677bc202e73ffa7265b4ccc5e01d10a8d5026d5c2e712a954624122e2fa9af",
+  "pins" : [
+    {
+      "identity" : "eazyswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ziyon-fr/EazySwiftUI",
+      "state" : {
+        "revision" : "7cb2f558cac0868df5b1fa5a5ce47d3e879e296f",
+        "version" : "1.5.3"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "047aa81b77adcbf583a966dfef620d17650cc656",
+        "version" : "4.5.1"
+      }
+    }
+  ],
+  "version" : 3
+}

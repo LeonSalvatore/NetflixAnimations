@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		35631B932DE068A2008DFE25 /* EazySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35631B922DE068A2008DFE25 /* EazySwiftUI */; };
+		35631B9F2DE06D8D008DFE25 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 35631B9E2DE06D8D008DFE25 /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		35631B832DE06809008DFE25 /* NetflixUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35631B932DE068A2008DFE25 /* EazySwiftUI in Frameworks */,
+				35631B9F2DE06D8D008DFE25 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = NetflixUIAnimations;
 			packageProductDependencies = (
+				35631B922DE068A2008DFE25 /* EazySwiftUI */,
+				35631B9E2DE06D8D008DFE25 /* Lottie */,
 			);
 			productName = NetflixUIAnimations;
 			productReference = 35631B832DE06809008DFE25 /* NetflixUIAnimations.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = 35631B7A2DE06809008DFE25;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				35631B912DE068A2008DFE25 /* XCRemoteSwiftPackageReference "EazySwiftUI" */,
+				35631B9D2DE06D8D008DFE25 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 35631B842DE06809008DFE25 /* Products */;
 			projectDirPath = "";
@@ -185,6 +198,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -242,6 +256,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -324,6 +339,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35631B912DE068A2008DFE25 /* XCRemoteSwiftPackageReference "EazySwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ziyon-fr/EazySwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.3;
+			};
+		};
+		35631B9D2DE06D8D008DFE25 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35631B922DE068A2008DFE25 /* EazySwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35631B912DE068A2008DFE25 /* XCRemoteSwiftPackageReference "EazySwiftUI" */;
+			productName = EazySwiftUI;
+		};
+		35631B9E2DE06D8D008DFE25 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35631B9D2DE06D8D008DFE25 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35631B7B2DE06809008DFE25 /* Project object */;
 }
